@@ -32,38 +32,19 @@
 	private static final int EDITFIELD_ROWS = 30;
 	//Open a new window to view a file
 	private static final boolean USE_POPUP = true;
-	/**
-	 * If USE_DIR_PREVIEW = true, then for every directory a tooltip will be
-	 * created (hold the mouse over the link) with the first DIR_PREVIEW_NUMBER entries.
-	 * This can yield to performance issues. Turn it off, if the directory loads to slow.
-	 */
+
 	private static final boolean USE_DIR_PREVIEW = false;
 	private static final int DIR_PREVIEW_NUMBER = 10;
-	/**
-	 * The name of an optional CSS Stylesheet file
-	 */
+	
 	private static final String CSS_NAME = "Browser.css";
-	/**
-	 * The compression level for zip file creation (0-9)
-	 * 0 = No compression
-	 * 1 = Standard compression (Very fast)
-	 * ...
-	 * 9 = Best compression (Very slow)
-	 */
+	
 	private static final int COMPRESSION_LEVEL = 1;
-	/**
-	 * The FORBIDDEN_DRIVES are not displayed on the list. This can be usefull, if the
-	 * server runs on a windows platform, to avoid a message box, if you try to access
-	 * an empty removable drive (See KNOWN BUGS in Readme.txt).
-	 */
+	
 	private static final String[] FORBIDDEN_DRIVES = {"a:\\"};
 
-	/**
-	 * Command of the shell interpreter and the parameter to run a programm
-	 */
-	//private static final String[] COMMAND_INTERPRETER = {"cmd", "/C"}; // Dos,Windows
-	private static final String[] COMMAND_INTERPRETER = {"/bin/sh","-c"}; 	// Unix
-
+	
+	private static final String[] COMMAND_INTERPRETER = {"cmd", "/C"}; // Dos,Windows
+	
 	/**
 	 * Max time in ms a process is allowed to run, before it will be terminated
 	 */
